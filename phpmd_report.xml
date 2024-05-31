@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pmd version="@package_version@" tool="phpmd" timestamp="2024-05-23T09:46:03+02:00">
+  <file name="C:\xampp\htdocs\laravised\app\Http\Controllers\Auth\GoogleController.php">
+    <violation beginline="28" endline="33" rule="StaticAccess" ruleset="Clean Code Rules" externalInfoUrl="https://phpmd.org/rules/cleancode.html#staticaccess" priority="1">
+      Avoid using static access to class &#039;\App\Models\User&#039; in method &#039;callbackGoogle&#039;.
+    </violation>
+    <violation beginline="34" endline="37" rule="ElseExpression" ruleset="Clean Code Rules" externalInfoUrl="https://phpmd.org/rules/cleancode.html#elseexpression" priority="1">
+      The method callbackGoogle uses an else expression. Else clauses are basically not necessary and you can simplify the code by not using them.
+    </violation>
+    <violation beginline="40" endline="40" rule="StaticAccess" ruleset="Clean Code Rules" externalInfoUrl="https://phpmd.org/rules/cleancode.html#staticaccess" priority="1">
+      Avoid using static access to class &#039;\Illuminate\Support\Facades\Auth&#039; in method &#039;callbackGoogle&#039;.
+    </violation>
+  </file>
+  <file name="C:\xampp\htdocs\laravised\app\Http\Controllers\Auth\LoginController.php">
+    <violation beginline="25" endline="25" rule="StaticAccess" ruleset="Clean Code Rules" externalInfoUrl="https://phpmd.org/rules/cleancode.html#staticaccess" priority="1">
+      Avoid using static access to class &#039;\Illuminate\Support\Facades\Auth&#039; in method &#039;checkInfo&#039;.
+    </violation>
+    <violation beginline="36" endline="36" rule="StaticAccess" ruleset="Clean Code Rules" externalInfoUrl="https://phpmd.org/rules/cleancode.html#staticaccess" priority="1">
+      Avoid using static access to class &#039;\Illuminate\Support\Facades\Auth&#039; in method &#039;logout&#039;.
+    </violation>
+  </file>
+  <file name="C:\xampp\htdocs\laravised\app\Http\Controllers\Auth\RegisterController.php">
+    <violation beginline="33" endline="33" rule="StaticAccess" ruleset="Clean Code Rules" externalInfoUrl="https://phpmd.org/rules/cleancode.html#staticaccess" priority="1">
+      Avoid using static access to class &#039;\App\Models\User&#039; in method &#039;saveInfo&#039;.
+    </violation>
+    <violation beginline="35" endline="38" rule="StaticAccess" ruleset="Clean Code Rules" externalInfoUrl="https://phpmd.org/rules/cleancode.html#staticaccess" priority="1">
+      Avoid using static access to class &#039;\Illuminate\Support\Facades\URL&#039; in method &#039;saveInfo&#039;.
+    </violation>
+    <violation beginline="47" endline="47" rule="StaticAccess" ruleset="Clean Code Rules" externalInfoUrl="https://phpmd.org/rules/cleancode.html#staticaccess" priority="1">
+      Avoid using static access to class &#039;\App\Models\User&#039; in method &#039;verifyEmail&#039;.
+    </violation>
+    <violation beginline="49" endline="49" rule="StaticAccess" ruleset="Clean Code Rules" externalInfoUrl="https://phpmd.org/rules/cleancode.html#staticaccess" priority="1">
+      Avoid using static access to class &#039;\Illuminate\Support\Facades\URL&#039; in method &#039;verifyEmail&#039;.
+    </violation>
+  </file>
+  <file name="C:\xampp\htdocs\laravised\app\Http\Controllers\Auth\ResetPasswordController.php">
+    <violation beginline="31" endline="31" rule="StaticAccess" ruleset="Clean Code Rules" externalInfoUrl="https://phpmd.org/rules/cleancode.html#staticaccess" priority="1">
+      Avoid using static access to class &#039;\Illuminate\Support\Str&#039; in method &#039;sendPasswordResetLink&#039;.
+    </violation>
+    <violation beginline="35" endline="35" rule="StaticAccess" ruleset="Clean Code Rules" externalInfoUrl="https://phpmd.org/rules/cleancode.html#staticaccess" priority="1">
+      Avoid using static access to class &#039;\Illuminate\Support\Facades\Hash&#039; in method &#039;sendPasswordResetLink&#039;.
+    </violation>
+    <violation beginline="35" endline="35" rule="StaticAccess" ruleset="Clean Code Rules" externalInfoUrl="https://phpmd.org/rules/cleancode.html#staticaccess" priority="1">
+      Avoid using static access to class &#039;\Carbon\Carbon&#039; in method &#039;sendPasswordResetLink&#039;.
+    </violation>
+    <violation beginline="49" endline="49" rule="StaticAccess" ruleset="Clean Code Rules" externalInfoUrl="https://phpmd.org/rules/cleancode.html#staticaccess" priority="1">
+      Avoid using static access to class &#039;\Illuminate\Support\Facades\Hash&#039; in method &#039;showResetForm&#039;.
+    </violation>
+    <violation beginline="75" endline="75" rule="StaticAccess" ruleset="Clean Code Rules" externalInfoUrl="https://phpmd.org/rules/cleancode.html#staticaccess" priority="1">
+      Avoid using static access to class &#039;\Illuminate\Support\Facades\Hash&#039; in method &#039;reset&#039;.
+    </violation>
+    <violation beginline="79" endline="79" rule="StaticAccess" ruleset="Clean Code Rules" externalInfoUrl="https://phpmd.org/rules/cleancode.html#staticaccess" priority="1">
+      Avoid using static access to class &#039;\Illuminate\Support\Facades\Hash&#039; in method &#039;reset&#039;.
+    </violation>
+    <violation beginline="82" endline="82" rule="StaticAccess" ruleset="Clean Code Rules" externalInfoUrl="https://phpmd.org/rules/cleancode.html#staticaccess" priority="1">
+      Avoid using static access to class &#039;\Illuminate\Support\Facades\Auth&#039; in method &#039;reset&#039;.
+    </violation>
+  </file>
+  <file name="C:\xampp\htdocs\laravised\app\Models\User.php">
+    <violation beginline="54" endline="54" rule="StaticAccess" ruleset="Clean Code Rules" externalInfoUrl="https://phpmd.org/rules/cleancode.html#staticaccess" priority="1">
+      Avoid using static access to class &#039;App\Models\Str&#039; in method &#039;generatePasswordResetToken&#039;.
+    </violation>
+    <violation beginline="58" endline="58" rule="StaticAccess" ruleset="Clean Code Rules" externalInfoUrl="https://phpmd.org/rules/cleancode.html#staticaccess" priority="1">
+      Avoid using static access to class &#039;App\Models\Hash&#039; in method &#039;generatePasswordResetToken&#039;.
+    </violation>
+  </file>
+</pmd>
