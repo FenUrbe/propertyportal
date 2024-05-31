@@ -64,3 +64,53 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## Important Notes:
+C:\xampp\apache\conf\extra\httpd-vhosts.conf
+<VirtualHost *:80>
+DocumentRoot "C:\xampp\htdocs\laravised\public"
+ServerName laravised
+<Directory "C:\xampp\htdocs\laravised\public">
+</Directory>
+</VirtualHost>
+
+C:\Windows\System32\drivers\etc
+127.0.0.1      local.golaravel
+127.0.0.1      local.laravised
+127.0.0.1      laravised
+
+C:\Users\fenni\OneDrive\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+function art {
+    php artisan $args
+}
+
+function refreshdb {
+    php artisan migrate:refresh $args
+}
+
+function restoredb {
+    php artisan db:seed --class=RestoreUserBackupSeeder $args
+}
+
+function backupdb {
+    php artisan db:seed --class=UserBackupSeeder $args
+}
+
+function generatedb {
+    php artisan db:seed --class=GenerateUserSeeder $args
+}
+
+function seed {
+    $artifactType = $args[0]
+    $artifactName = $args[1]
+    php artisan db:seed --class=$artifactType $artifactName
+}
+
+function make {
+    $artifactType = $args[0]
+    $artifactName = $args[1]
+    php artisan make:$artifactType $artifactName
+}
+
+
